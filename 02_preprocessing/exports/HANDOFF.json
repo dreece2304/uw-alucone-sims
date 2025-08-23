@@ -1,0 +1,17 @@
+{
+  "schema": "p2_handoff.v1",
+  "matrices": {
+    "baseline_tic_sqrt": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
+    "robust_pqn_sqrt_pareto": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv"
+  },
+  "qc": {
+    "tic_hist": "02_preprocessing/qc/tic_hist.png",
+    "intensity_density": "02_preprocessing/qc/intensity_density.png",
+    "method_agreement": "02_preprocessing/qc/baseline_vs_robust_scatter.png"
+  },
+  "logs": {
+    "scaling_factors": "02_preprocessing/logs/scaling_factors.csv",
+    "preprocess_run": "02_preprocessing/logs/preprocess_run.json"
+  },
+  "notes": "No centering persisted; sample column order identical to inputs; pos/neg vertically stacked by masses."
+}

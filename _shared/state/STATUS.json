@@ -1,25 +1,25 @@
 {
   "project": "ToF-SIMS Alucone Dose Study",
-  "phase": "1",
+  "phase": "2",
   "phase_name": "Data Audit",
   "progress": {
     "percent": 100,
-    "summary": "Phase 1 complete - TSV & hygiene pass"
+    "summary": "Phase 2 complete - baseline & robust matrices + QC"
   },
   "next_steps": [
-    "Phase 2: preprocessing (baseline TIC\u2192\u221a and robust PQN\u2192\u221a\u2192Pareto)"
+    "Phase 3: PCA with center-only; scores/loadings/scree; PC\u2013dose trends"
   ],
   "issues": [],
   "artifacts": [
-    "00_documentation/reports/PHASE_01_SUMMARY.md",
-    "01_raw_data/AUDIT_REPORT.md",
-    "01_raw_data/tsv_audit.json",
-    "01_raw_data/FOLDER_AUDIT.md",
-    "01_raw_data/folder_audit.json",
-    "01_raw_data/imaging_index.json",
-    "01_raw_data/manifests/raw_manifest.tsv",
-    "meta/pos_catalog.csv",
-    "meta/neg_catalog.csv"
+    "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
+    "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv",
+    "02_preprocessing/qc/tic_hist.png",
+    "02_preprocessing/qc/intensity_density.png",
+    "02_preprocessing/qc/baseline_vs_robust_scatter.png",
+    "02_preprocessing/logs/scaling_factors.csv",
+    "02_preprocessing/logs/preprocess_run.json",
+    "02_preprocessing/exports/HANDOFF.json",
+    "00_documentation/reports/PHASE_02_SUMMARY.md"
   ],
   "locations": {
     "project_root": "/home/dreece23/sims-pca-ws",
@@ -27,5 +27,5 @@
     "pos_tsv": "out/all_positive_data_renamed.tsv",
     "neg_tsv": "out/all_negative_data_renamed.tsv"
   },
-  "updated_at": "2025-08-23T20:06:38.066217Z"
+  "updated_at": "2025-08-23T21:08:13.492851Z"
 }

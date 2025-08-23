@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-08-23T21:07:27Z",
+  "git_commit": "902d2e85b48c56d15bf37dca72c8d532f5fb4664",
+  "inputs": {
+    "positive": "/home/dreece23/sims-pca-ws/out/all_positive_data_renamed.tsv",
+    "positive_sha256": "f5ac0e2565dd7209c3d5b60683b6c9103e86f4f2e8b67974e533a0efbedb6358",
+    "negative": "/home/dreece23/sims-pca-ws/out/all_negative_data_renamed.tsv",
+    "negative_sha256": "d1b5d4567abe4d74d78a26b8243b9fa87cf850140a5567e651f942e30ef8eb63"
+  },
+  "outputs": {
+    "baseline_tic_sqrt": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
+    "robust_pqn_sqrt_pareto": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv",
+    "scaling_factors": "02_preprocessing/logs/scaling_factors.csv"
+  },
+  "samples": [
+    "P1_2000\u03bcC-P",
+    "P1_500\u03bcC-P",
+    "P1_5000\u03bcC-P",
+    "P1_10000\u03bcC-P",
+    "P1_15000\u03bcC-P",
+    "P2_2000\u03bcC-P",
+    "P2_500\u03bcC-P",
+    "P2_5000\u03bcC-P",
+    "P2_10000\u03bcC-P",
+    "P2_15000\u03bcC-P",
+    "P3_2000\u03bcC-P",
+    "P3_500\u03bcC-P",
+    "P3_5000\u03bcC-P",
+    "P3_10000\u03bcC-P",
+    "P3_15000\u03bcC-P"
+  ],
+  "notes": "Centering is NOT persisted; only inside PCA later."
+}
