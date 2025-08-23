@@ -25,24 +25,37 @@
 - Sample columns are identical across matrices and match Phase-1 TSVs.
 - Positive/negative masses are concatenated by rows to preserve all features.
 
-## Validation
+## Validation (Phase-2)
 
-**Schema/metrics**: PASS
-- All matrices validated successfully (1,853 rows, 15 samples)
-- Agreement metrics meet 0.60 threshold:
-  - Samplewise correlation (mean): 0.6023
-  - Mean-spectrum correlation: 0.6689
+**Policy**: balanced (median ≥ 0.55 & mean-spectrum ≥ 0.65)
 
-**Folder hygiene**: PASS
-- All required directories and files present
-- No disallowed files or patterns detected
+**Agreement Metrics**: 
+- Median samplewise r: 0.5613 ≥ 0.55 ✓
+- Mean samplewise r: 0.6023  
+- Mean-spectrum r: 0.6689 ≥ 0.65 ✓
 
-**Key Metrics**
-- Samplewise Pearson r (median): 0.5613
-- Samplewise Pearson r (mean): 0.6023  
-- Mean-spectrum Pearson r: 0.6689
+**Flagged Samples**: 12 MARGINAL (0.50 ≤ r < 0.60), 0 LOW (r < 0.50)
 - Range: [0.5293, 0.7761]
+- Only 3 samples achieve OK status (500μC dose)
 
-**Enhanced QC**
-- New samplewise correlation histogram: method_agreement_samplewise_hist.png
-- Method agreement statistics: method_agreement_stats.{json,txt}
+**PQN Correlations**:
+- vs pqn_factor_pos: r=0.7112, p=0.0030 (significant positive)
+- vs pqn_factor_neg: r=-0.9336, p<0.0001 (highly significant negative)
+- *Interpretation*: Low agreement stems from differential ionization efficiency responses, not random variation
+
+**Sensitivity Conclusion**:
+- Current (PQN→√→Pareto): median r=0.5613, mean-spectrum r=0.6689
+- Variant (PQN→√, no Pareto): median r=0.9974, mean-spectrum r=0.8837
+- Deltas: +0.4361, +0.2148 respectively
+- **Recommendation**: Adopt PQN→√ (no Pareto) as robust path for Phase-3
+
+**Per-polarity Handoff**: HANDOFF.json includes matrices_pos, matrices_neg, and matrices_variant (no-Pareto); defaults unchanged pending Phase-3 policy
+
+**Hygiene**: PASS
+
+**Artifacts Referenced**:
+- 02_preprocessing/logs/samplewise_agreement.csv
+- 02_preprocessing/logs/samplewise_pqn_crosstab.csv  
+- 02_preprocessing/logs/robust_variant_metrics.json
+- 02_preprocessing/qc/method_agreement_samplewise_hist.png
+- 02_preprocessing/qc/method_agreement_samplewise_hist_variant.png

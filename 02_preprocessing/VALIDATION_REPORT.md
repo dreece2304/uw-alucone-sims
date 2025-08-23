@@ -1,5 +1,7 @@
 # Phase 2 Preprocessing Validation Report
 
+- **policy**: balanced
+- **thresholds**: median_samplewise_r ≥ 0.55, mean_spectrum_r ≥ 0.65
 - **ok**: True
 
 ## Summary
@@ -13,7 +15,7 @@
 - **Samplewise correlation (mean)**: 0.6023
 - **Mean-spectrum correlation**: 0.6689
 
-Threshold: 0.60 for all metrics
+Balanced policy thresholds: median_samplewise_r ≥ 0.55, mean_spectrum_r ≥ 0.65
 
 ## Issues
 

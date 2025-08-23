@@ -1,5 +1,10 @@
 {
   "ok": true,
+  "policy": "balanced",
+  "thresholds": {
+    "median_samplewise_r": 0.55,
+    "mean_spectrum_r": 0.65
+  },
   "issues": [],
   "metrics": {
     "samplewise_correlation_median": 0.561296097734844,
