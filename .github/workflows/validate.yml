@@ -15,3 +15,14 @@ jobs:
         run: |
           chmod +x scripts/validate_registry.py || true
           ./scripts/validate_registry.py || ./scripts/validate_registry.py || true
+  folder_hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { submodules: true }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Audit 01_raw_data policy
+        run: |
+          chmod +x scripts/audit_phase_folder.py || true
+          ./scripts/audit_phase_folder.py --policy _shared/policies/phase1_01_raw_data_policy.json

@@ -92,6 +92,12 @@ Environment is locked via env/requirements-lock.txt (tracked).
 
 **Registry model**: Path resolution uses registry.v1 schema with separate `files`, `dirs`, and `urls` sections. URLs are references only (not filesystem-validated). All scripts must resolve paths via `_shared/utils/io_utils.py` - no hardcoded absolute paths permitted.
 
+**Local folder hygiene hooks**: Enable pre-commit validation to catch policy violations before committing:
+```bash
+chmod +x .git-hooks/pre-commit
+git config core.hooksPath .git-hooks
+```
+
 **Write restrictions**: Script outputs must be confined to phase folders or `results/` (for final curated artifacts only). Writes to cross-phase directories (`roi/`, `out/`, `meta/`) are prohibited during analysis execution.
 
 **QC artifact organization**: Quality control outputs must be stored under `02_preprocessing/qc/`. The root `qc/` directory serves as an index only, containing README.md with pointers to actual QC locations.

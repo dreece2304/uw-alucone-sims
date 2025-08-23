@@ -1,0 +1,39 @@
+{
+  "folder": "01_raw_data",
+  "allowed_dirs": [
+    "scripts",
+    "spatial",
+    "phase_agent", 
+    "working_extraction",
+    "manifests"
+  ],
+  "allowed_files": [
+    "AUDIT_REPORT.md",
+    "FOLDER_AUDIT.md",
+    "tsv_audit.json",
+    "folder_audit.json",
+    "imaging_index.json",
+    "README.md"
+  ],
+  "allowed_globs": [
+    "*.sidecar.json",
+    "*.npz",
+    "*.sha256"
+  ],
+  "deny_extensions": [
+    ".itax",
+    ".itm",
+    ".itmx",
+    ".ita",
+    ".imzML",
+    ".ibd",
+    ".ipynb",
+    ".tmp",
+    ".bak",
+    ".~",
+    ".log"
+  ],
+  "max_file_mb": 50,
+  "allowlist_file": ".allowlist",
+  "notes": "Keep only audit artifacts, small spatial indexes, and minimal helper scripts here."
+}

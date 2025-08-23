@@ -1,0 +1,74 @@
+{
+  "audit_date": "2025-08-23",
+  "positive": {
+    "file": "/home/dreece23/sims-pca-ws/out/all_positive_data_renamed.tsv",
+    "polarity": "positive",
+    "valid": true,
+    "issues": [],
+    "metrics": {
+      "n_masses": 930,
+      "n_samples": 15,
+      "mass_range": [
+        0,
+        929
+      ],
+      "tic_range": [
+        348532.2483925554,
+        4157229.323494286
+      ],
+      "zero_counts": {
+        "P1_2000\u03bcC-P": 85,
+        "P1_500\u03bcC-P": 88,
+        "P1_5000\u03bcC-P": 86,
+        "P1_10000\u03bcC-P": 87,
+        "P1_15000\u03bcC-P": 85,
+        "P2_2000\u03bcC-P": 86,
+        "P2_500\u03bcC-P": 87,
+        "P2_5000\u03bcC-P": 89,
+        "P2_10000\u03bcC-P": 86,
+        "P2_15000\u03bcC-P": 82,
+        "P3_2000\u03bcC-P": 86,
+        "P3_500\u03bcC-P": 91,
+        "P3_5000\u03bcC-P": 86,
+        "P3_10000\u03bcC-P": 84,
+        "P3_15000\u03bcC-P": 83
+      }
+    }
+  },
+  "negative": {
+    "file": "/home/dreece23/sims-pca-ws/out/all_negative_data_renamed.tsv",
+    "polarity": "negative",
+    "valid": true,
+    "issues": [],
+    "metrics": {
+      "n_masses": 923,
+      "n_samples": 15,
+      "mass_range": [
+        0,
+        922
+      ],
+      "tic_range": [
+        1277526.7287095077,
+        3920060.96901011
+      ],
+      "zero_counts": {
+        "P1_2000\u03bcC-N": 66,
+        "P1_500\u03bcC-N": 216,
+        "P1_5000\u03bcC-N": 67,
+        "P1_10000\u03bcC-N": 67,
+        "P1_15000\u03bcC-N": 64,
+        "P2_2000\u03bcC-N": 64,
+        "P2_500\u03bcC-N": 216,
+        "P2_5000\u03bcC-N": 67,
+        "P2_10000\u03bcC-N": 65,
+        "P2_15000\u03bcC-N": 63,
+        "P3_2000\u03bcC-N": 67,
+        "P3_500\u03bcC-N": 212,
+        "P3_5000\u03bcC-N": 67,
+        "P3_10000\u03bcC-N": 70,
+        "P3_15000\u03bcC-N": 64
+      }
+    }
+  },
+  "overall_valid": true
+}

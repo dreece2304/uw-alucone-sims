@@ -15,3 +15,11 @@ __pycache__/
 env/**
 !env/
 !env/requirements-lock.txt
+
+# 01_raw_data hygiene
+01_raw_data/working_extraction/**
+01_raw_data/**/*.tmp
+01_raw_data/**/*.bak
+01_raw_data/**/*.log
+# Never version instrument-native dumps here
+01_raw_data/**/*.{itax,itm,itmx,ita,imzML,ibd}

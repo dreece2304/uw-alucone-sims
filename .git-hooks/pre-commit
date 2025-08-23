@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Run folder audit before commit; allow override with AUDIT_SKIP=1
+if [[ "${AUDIT_SKIP:-0}" != "1" ]]; then
+  scripts/audit_phase_folder.py --policy _shared/policies/phase1_01_raw_data_policy.json || {
+    echo "Folder audit failed. Set AUDIT_SKIP=1 to bypass (not recommended)." >&2
+    exit 1
+  }
+fi

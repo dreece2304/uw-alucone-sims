@@ -59,6 +59,8 @@ Submodules: ATOFSIMSCLASS is the only submodule; see 00_documentation/SUBMODULES
 
 The env/requirements-lock.txt must be updated after dependency changes.
 
+**CI Folder Hygiene**: PRs will fail if 01_raw_data/ contains disallowed files or large blobs. The folder_hygiene job audits against `_shared/policies/phase1_01_raw_data_policy.json` and blocks merges that violate size limits, forbidden file extensions, or directory structure rules.
+
 **Shared utilities versioning**: Changes to modules in `_shared/utils/`, `adapters/`, `phase*_*.py` scripts, or configuration files require:
 1. Pull request with review by project maintainer
 2. Semantic version increment in affected module docstrings

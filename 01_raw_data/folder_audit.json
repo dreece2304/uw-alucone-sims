@@ -1,0 +1,42 @@
+{
+  "folder": "01_raw_data",
+  "ok": true,
+  "patterns": {
+    "allowed_dirs": [
+      "phase_agent",
+      "spatial",
+      "working_extraction",
+      "scripts",
+      "manifests"
+    ],
+    "allowed_files": [
+      "FOLDER_AUDIT.md",
+      "AUDIT_REPORT.md",
+      "tsv_audit.json",
+      "folder_audit.json",
+      "imaging_index.json",
+      "README.md"
+    ],
+    "allowed_globs": [
+      "*.sidecar.json",
+      "*.npz",
+      "*.sha256"
+    ],
+    "deny_extensions": [
+      ".imzML",
+      ".log",
+      ".~",
+      ".itax",
+      ".ipynb",
+      ".ita",
+      ".itm",
+      ".ibd",
+      ".tmp",
+      ".itmx",
+      ".bak"
+    ],
+    "max_file_mb": 50
+  },
+  "findings": [],
+  "problems": []
+}
