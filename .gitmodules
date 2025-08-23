@@ -1,0 +1,3 @@
+[submodule "ATOFSIMSCLASS"]
+	path = ATOFSIMSCLASS
+	url = https://gitlab.com/pacific-northwest-national-laboratory/ATOFSIMSCLASS/pca-analysis
