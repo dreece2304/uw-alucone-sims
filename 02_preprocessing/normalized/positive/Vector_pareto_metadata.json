@@ -1,0 +1,16 @@
+{
+  "normalization": "Vector",
+  "transformation": "pareto",
+  "n_samples": 15,
+  "n_masses": 930,
+  "mass_range": [
+    0.0,
+    929.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.03362875475664199,
+    "std_intensity": 0.17964060384638883,
+    "zero_fraction": 0.09254480286738351,
+    "dynamic_range": 526008.4740460743
+  }
+}

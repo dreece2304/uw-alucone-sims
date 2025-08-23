@@ -1,0 +1,13 @@
+{
+  "phase": "07",
+  "name": "Statistical Analysis",
+  "status": "idle",
+  "inputs_expected": ["02_preprocessing/normalized/*", "03_pca_analysis/baseline/*", "05_chemical_interpretation/indices/*"],
+  "outputs_planned": ["07_statistical_analysis/anova/*", "07_statistical_analysis/correlation/*", "07_statistical_analysis/validation/*"],
+  "progress": {"percent": 0, "detail": ""},
+  "issues": [],
+  "last_run": "",
+  "upstream": ["02_preprocessing", "03_pca_analysis", "05_chemical_interpretation"],
+  "downstream": ["06_visualization", "08_integration"],
+  "uses_utils": ["_shared/utils/*"]
+}

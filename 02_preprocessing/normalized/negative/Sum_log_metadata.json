@@ -1,0 +1,16 @@
+{
+  "normalization": "Sum",
+  "transformation": "log",
+  "n_samples": 15,
+  "n_masses": 923,
+  "mass_range": [
+    0.0,
+    922.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.0004570252507600994,
+    "std_intensity": 0.0033150023185148573,
+    "zero_fraction": 0.10364752618273745,
+    "dynamic_range": 816634.2979229012
+  }
+}

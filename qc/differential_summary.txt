@@ -1,0 +1,120 @@
+=== Differential Features Summary ===
+Analysis Date: 2025-08-22 20:46:09.027411
+
+=== POSITIVE - baseline+TICsqrt ===
+
+Contrast: 15000 vs 500 μC/cm²
+  Significant masses: 556/930
+  Direction: ↑187 ↓369
+  Expected: Expected with dose ↑: ↓ oxygenates, ↑ hydrocarbons/aromatics, ↑ Al-O
+  Family changes:
+    low_hydrocarbons: 12 significant masses (mostly ↓, top: [22, 19, 29])
+    mid_hydrocarbons: 24 significant masses (mostly ↑, top: [57, 58, 55])
+    aromatics: 29 significant masses (mostly ↑, top: [83, 95, 81])
+    metal_oxides: 16 significant masses (mostly ↑, top: [43, 41, 31])
+    oxygenates: 28 significant masses (mostly ↑, top: [57, 58, 55])
+    high_mass: 85 significant masses (mostly ↑, top: [131, 119, 155])
+  Top increasing: m/z 22 (log2FC=22.49, q=0.026)
+  Top decreasing: m/z 296 (log2FC=-2.09, q=0.000)
+
+Contrast: 10000 vs 2000 μC/cm²
+  Significant masses: 176/930
+  Direction: ↑156 ↓20
+  Expected: Expected with dose ↑: ↓ oxygenates, ↑ hydrocarbons/aromatics, ↑ Al-O
+  Family changes:
+    low_hydrocarbons: 7 significant masses (mostly ↓, top: [15, 26, 13])
+    mid_hydrocarbons: 11 significant masses (mostly ↓, top: [31, 51, 50])
+    aromatics: 26 significant masses (mostly ↑, top: [94, 91, 95])
+    metal_oxides: 10 significant masses (mostly ↓, top: [31, 44, 41])
+    oxygenates: 14 significant masses (mostly ↓, top: [31, 62, 51])
+    high_mass: 75 significant masses (mostly ↑, top: [128, 152, 101])
+  Top increasing: m/z 128 (log2FC=0.54, q=0.001)
+  Top decreasing: m/z 815 (log2FC=-0.31, q=0.014)
+
+=== POSITIVE - robust+PQNsqrtPareto ===
+
+Contrast: 15000 vs 500 μC/cm²
+  Significant masses: 590/930
+  Direction: ↑0 ↓56
+  Expected: Expected with dose ↑: ↓ oxygenates, ↑ hydrocarbons/aromatics, ↑ Al-O
+  Family changes:
+    low_hydrocarbons: 10 significant masses (mostly ↓, top: [27, 12, 17])
+    mid_hydrocarbons: 27 significant masses (mostly ↓, top: [48, 31, 32])
+    aromatics: 27 significant masses (mostly ↓, top: [76, 65, 66])
+    metal_oxides: 19 significant masses (mostly ↓, top: [27, 25, 28])
+    oxygenates: 32 significant masses (mostly ↓, top: [48, 28, 29])
+    high_mass: 84 significant masses (mostly ↓, top: [194, 114, 137])
+  Top increasing: m/z 194 (log2FC=-1.43, q=0.042)
+  Top decreasing: m/z 278 (log2FC=-8.98, q=0.034)
+
+Contrast: 10000 vs 2000 μC/cm²
+  Significant masses: 86/930
+  Direction: ↑11 ↓36
+  Expected: Expected with dose ↑: ↓ oxygenates, ↑ hydrocarbons/aromatics, ↑ Al-O
+  Family changes:
+    mid_hydrocarbons: 3 significant masses (mostly ↓, top: [47, 59, 57])
+    aromatics: 4 significant masses (mostly ↓, top: [95, 73, 92])
+    oxygenates: 3 significant masses (mostly ↓, top: [47, 59, 57])
+    high_mass: 46 significant masses (mostly ↓, top: [143, 107, 131])
+  Top increasing: m/z 143 (log2FC=5.47, q=0.021)
+  Top decreasing: m/z 126 (log2FC=-6.48, q=0.049)
+
+=== NEGATIVE - baseline+TICsqrt ===
+
+Contrast: 15000 vs 500 μC/cm²
+  Significant masses: 819/923
+  Direction: ↑782 ↓37
+  Expected: Expected with dose ↑: ↓ organics, ↑ Al-O condensation, ↑ oxides
+  Family changes:
+    low_hydrocarbons: 15 significant masses (mostly ↓, top: [15, 27, 14])
+    mid_hydrocarbons: 25 significant masses (mostly ↑, top: [35, 55, 58])
+    aromatics: 30 significant masses (mostly ↑, top: [71, 83, 95])
+    metal_oxides: 17 significant masses (mostly ↑, top: [35, 45, 43])
+    oxygenates: 29 significant masses (mostly ↑, top: [35, 55, 58])
+    high_mass: 97 significant masses (mostly ↑, top: [173, 155, 191])
+  Top increasing: m/z 773 (log2FC=28.93, q=0.002)
+  Top decreasing: m/z 76 (log2FC=-2.61, q=0.000)
+
+Contrast: 10000 vs 2000 μC/cm²
+  Significant masses: 540/923
+  Direction: ↑524 ↓16
+  Expected: Expected with dose ↑: ↓ organics, ↑ Al-O condensation, ↑ oxides
+  Family changes:
+    low_hydrocarbons: 9 significant masses (mostly ↓, top: [25, 12, 15])
+    mid_hydrocarbons: 20 significant masses (mostly ↑, top: [55, 45, 49])
+    aromatics: 19 significant masses (mostly ↑, top: [73, 86, 89])
+    metal_oxides: 12 significant masses (mostly ↓, top: [45, 39, 41])
+    oxygenates: 24 significant masses (mostly ↑, top: [55, 45, 49])
+    high_mass: 63 significant masses (mostly ↑, top: [109, 110, 108])
+  Top increasing: m/z 109 (log2FC=0.68, q=0.008)
+  Top decreasing: m/z 855 (log2FC=-22.79, q=0.038)
+
+=== NEGATIVE - robust+PQNsqrtPareto ===
+
+Contrast: 15000 vs 500 μC/cm²
+  Significant masses: 481/923
+  Direction: ↑0 ↓9
+  Expected: Expected with dose ↑: ↓ organics, ↑ Al-O condensation, ↑ oxides
+  Family changes:
+    low_hydrocarbons: 18 significant masses (mostly ↓, top: [12, 13, 14])
+    mid_hydrocarbons: 29 significant masses (mostly ↓, top: [31, 32, 33])
+    aromatics: 30 significant masses (mostly ↓, top: [65, 66, 67])
+    metal_oxides: 20 significant masses (mostly ↓, top: [25, 26, 27])
+    oxygenates: 34 significant masses (mostly ↓, top: [28, 29, 30])
+    high_mass: 87 significant masses (mostly ↓, top: [100, 101, 102])
+  Top increasing: m/z 221 (log2FC=-1.51, q=0.048)
+  Top decreasing: m/z 281 (log2FC=-7.95, q=0.003)
+
+Contrast: 10000 vs 2000 μC/cm²
+  Significant masses: 28/923
+  Direction: ↑17 ↓2
+  Expected: Expected with dose ↑: ↓ organics, ↑ Al-O condensation, ↑ oxides
+  Family changes:
+    low_hydrocarbons: 2 significant masses (mostly ↑, top: [30, 28])
+    mid_hydrocarbons: 2 significant masses (mostly ↓, top: [35, 58])
+    aromatics: 1 significant masses (mostly ↓, top: [95])
+    metal_oxides: 3 significant masses (mostly ↑, top: [30, 28, 35])
+    oxygenates: 4 significant masses (mostly ↑, top: [30, 28, 35])
+    high_mass: 1 significant masses (mostly ↑, top: [133])
+  Top increasing: m/z 608 (log2FC=3.39, q=0.040)
+  Top decreasing: m/z 325 (log2FC=-3.59, q=0.043)

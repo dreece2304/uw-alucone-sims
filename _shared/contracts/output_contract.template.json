@@ -1,0 +1,9 @@
+{
+  "phase": "",
+  "outputs": [
+    {"name": "pca_scores", "path": "03_pca_analysis/baseline/pca_scores.tsv", "sha256": "", "schema": "scores_v1"},
+    {"name": "indices_trends", "path": "results/negative/baseline_TICsqrt/indices_trends.tsv", "sha256": "", "schema": "trend_v1"}
+  ],
+  "schema_version": "1.0.0",
+  "created_at": ""
+}

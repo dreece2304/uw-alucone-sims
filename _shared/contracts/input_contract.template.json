@@ -1,0 +1,10 @@
+{
+  "from_phase": "",
+  "to_phase": "",
+  "artifacts": [
+    {"name": "pos_tsv", "path": "out/all_positive_data_renamed.tsv", "sha256": "", "shape": [930, 15], "notes": ""},
+    {"name": "neg_tsv", "path": "out/all_negative_data_renamed.tsv", "sha256": "", "shape": [923, 15], "notes": ""}
+  ],
+  "schema_version": "1.0.0",
+  "created_at": ""
+}

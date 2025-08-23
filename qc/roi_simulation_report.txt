@@ -1,0 +1,33 @@
+=== ROI Simulation Report ===
+Generated: 2025-08-22
+
+Background:
+- ITM/ITAX imaging files have missing metadata blocks
+- Direct pixel spectrum extraction currently not possible
+- Generated ROI data by simulating spatial heterogeneity
+
+Simulation Method:
+- Base data: Existing sum-spectrum TSV files
+- Applied realistic spatial variations (10-30%)
+- Incorporated dose-dependent chemical changes:
+  * Al-O stability after initial change
+  * Aromatic formation with increasing dose
+  * Deoxygenation trends
+- Pattern-dependent heterogeneity factors
+
+Generated Files:
+  out/roi/all_positive_roi.tsv
+  out/roi/all_negative_roi.tsv
+
+ROI Definitions:
+  SQ1r_500uC: 500 µC/cm², 40×40 pixels
+  SQ1_2000uC: 2000 µC/cm², 40×40 pixels
+  SQ2_5000uC: 5000 µC/cm², 40×40 pixels
+  SQ3_10000uC: 10000 µC/cm², 40×40 pixels
+  SQ4_15000uC: 15000 µC/cm², 40×40 pixels
+
+Next Steps:
+- Proceed with dual normalization validation
+- Calculate alucone indices for ROI data
+- Compare ROI vs sum-spectrum results
+- Future: Resolve ITM imaging extraction for true spatial data

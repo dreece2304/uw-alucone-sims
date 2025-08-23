@@ -1,0 +1,48 @@
+
+ToF-SIMS Preprocessing Pipeline Report
+====================================
+Generated: 2025-08-22 23:46:55
+Project: ToF-SIMS Analysis of E-beam Induced Alucone Degradation
+
+PREPROCESSING PHILOSOPHY
+-----------------------
+✓ NO PRE-FILTERING APPLIED: All masses retained for PCA analysis
+✓ REASONING: Consistent contamination won't drive PCA variance
+✓ APPROACH: Let PCA identify chemically meaningful patterns
+✓ POST-HOC: Use loadings to evaluate peak relevance
+
+PREPROCESSING METHODS EVALUATED
+------------------------------
+Normalization - TIC: Total Ion Count normalization\nNormalization - Sum: Peak sum normalization\nNormalization - PQN: Probabilistic Quotient Normalization\nNormalization - Vector: Vector normalization (L2 norm)\n\nTransformation - sqrt: Square root transformation\nTransformation - log: Log10 transformation (log(x+1))\nTransformation - pareto: Pareto scaling\n
+POSITIVE ION RESULTS
+--------------------
+Methods evaluated: 12
+Recommended method: TIC_sqrt
+
+Top 3 methods by PC1-dose correlation:
+1. TIC_sqrt: ρ=-0.393 (p=1.48e-01)\n2. TIC_log: ρ=-0.393 (p=1.48e-01)\n3. TIC_pareto: ρ=-0.393 (p=1.48e-01)\n
+NEGATIVE ION RESULTS
+--------------------
+Methods evaluated: 12
+Recommended method: Vector_sqrt
+
+Top 3 methods by PC1-dose correlation:
+1. Vector_sqrt: ρ=0.884 (p=1.24e-05)\n2. TIC_sqrt: ρ=-0.873 (p=2.17e-05)\n3. Sum_sqrt: ρ=-0.873 (p=2.17e-05)\n
+RECOMMENDATIONS
+--------------
+1. Use recommended methods identified above for PCA analysis
+2. Compare results across top 3 methods to ensure robustness
+3. Consider method-specific characteristics:
+   - TIC/Sum: Standard approach, good for general analysis
+   - PQN: Better for metabolomics-style data
+   - Vector: Good for sparse data
+   - √ transform: Reduces intense peak dominance (recommended)
+   - Log transform: Stronger variance stabilization
+   - Pareto: Intermediate scaling approach
+
+NEXT STEPS
+----------
+1. Proceed to Phase 3: Standard PCA Analysis
+2. Use recommended preprocessing methods
+3. Compare PCA results across top methods
+4. Generate comprehensive PCA reports

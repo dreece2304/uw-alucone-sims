@@ -1,0 +1,49 @@
+{
+  "schema": "registry.v1",
+  "checked_at": "2025-08-23T18:44:52.350350Z",
+  "files": [
+    {
+      "key": "pos_tsv",
+      "path": "out/all_positive_data_renamed.tsv",
+      "exists": true
+    },
+    {
+      "key": "neg_tsv",
+      "path": "out/all_negative_data_renamed.tsv",
+      "exists": true
+    }
+  ],
+  "dirs": [
+    {
+      "key": "results_root",
+      "path": "results",
+      "exists": true
+    },
+    {
+      "key": "literature_root",
+      "path": "00_documentation/literature",
+      "exists": true
+    },
+    {
+      "key": "utils_root",
+      "path": "_shared/utils",
+      "exists": true
+    },
+    {
+      "key": "reports_root",
+      "path": "00_documentation/reports",
+      "exists": true
+    },
+    {
+      "key": "qc_root",
+      "path": "02_preprocessing/qc",
+      "exists": true
+    }
+  ],
+  "urls": [
+    {
+      "key": "pnnl_repo",
+      "url": "https://gitlab.com/pacific-northwest-national-laboratory/ATOFSIMSCLASS/pca-analysis"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+phase: "04_advanced_mvs"
+working_dir: "/home/dreece23/sims-pca-ws/04_advanced_mvs"
+allow_write:
+  - "04_advanced_mvs/**"
+read_only_inputs:
+  - "/home/dreece23/sims-pca-ws/out/*_renamed.tsv"
+  - "/home/dreece23/sims-pca-ws/02_preprocessing/normalized/**"
+  - "/home/dreece23/sims-pca-ws/03_pca_analysis/**"
+  - "/home/dreece23/sims-pca-ws/_shared/**"
+require_update: "/home/dreece23/sims-pca-ws/_shared/state/STATUS.json"

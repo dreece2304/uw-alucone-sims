@@ -1,0 +1,35 @@
+=== Dual Normalization Summary ===
+Analysis Date: 2025-08-22 20:41:44.921138
+
+=== POSITIVE ION MODE ===
+Method Comparison:
+  Mean cross-correlation: 0.343
+  Min cross-correlation: 0.026
+
+Baseline (TIC+√) Statistics:
+  Mean: 0.0201
+  Std: 0.0280
+  Skewness: 5.590
+
+Robust (PQN+√+Pareto) Statistics:
+  Mean: 0.0000
+  Std: 2.4107
+  Skewness: -0.476
+
+=== NEGATIVE ION MODE ===
+Method Comparison:
+  Mean cross-correlation: -0.258
+  Min cross-correlation: -0.699
+
+Baseline (TIC+√) Statistics:
+  Mean: 0.0191
+  Std: 0.0291
+  Skewness: 7.497
+
+Robust (PQN+√+Pareto) Statistics:
+  Mean: 0.0000
+  Std: 5.1065
+  Skewness: 4.609
+
+Conclusion:
+Moderate correlation - conclusions should be validated across both methods.

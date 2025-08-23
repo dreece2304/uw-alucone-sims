@@ -1,0 +1,13 @@
+{
+  "phase": "08",
+  "name": "Integration",
+  "status": "idle",
+  "inputs_expected": ["03_pca_analysis/*/*", "04_advanced_mvs/*/*", "05_chemical_interpretation/*/*", "06_visualization/*/*", "07_statistical_analysis/*/*"],
+  "outputs_planned": ["08_integration/reports/*", "08_integration/reproducibility/*", "00_documentation/reports/*"],
+  "progress": {"percent": 0, "detail": ""},
+  "issues": [],
+  "last_run": "",
+  "upstream": ["03_pca_analysis", "04_advanced_mvs", "05_chemical_interpretation", "06_visualization", "07_statistical_analysis"],
+  "downstream": [],
+  "uses_utils": ["_shared/utils/*"]
+}

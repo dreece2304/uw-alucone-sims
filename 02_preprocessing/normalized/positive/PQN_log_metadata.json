@@ -1,0 +1,16 @@
+{
+  "normalization": "PQN",
+  "transformation": "log",
+  "n_samples": 15,
+  "n_masses": 930,
+  "mass_range": [
+    0.0,
+    929.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.00045894198753539594,
+    "std_intensity": 0.002560158746697979,
+    "zero_fraction": 0.09254480286738351,
+    "dynamic_range": 684763.2418541235
+  }
+}

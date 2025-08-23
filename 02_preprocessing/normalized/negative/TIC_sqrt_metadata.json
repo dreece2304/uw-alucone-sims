@@ -1,0 +1,16 @@
+{
+  "normalization": "TIC",
+  "transformation": "sqrt",
+  "n_samples": 15,
+  "n_masses": 923,
+  "mass_range": [
+    0.0,
+    922.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.01708059258346869,
+    "std_intensity": 0.028136754888089716,
+    "zero_fraction": 0.10364752618273745,
+    "dynamic_range": 952.8504125942618
+  }
+}

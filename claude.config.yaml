@@ -1,0 +1,55 @@
+# Conservative, audit-friendly defaults
+defaultMode: plan
+disableBypassPermissionsMode: "disable"
+
+# Tool permissions (adjust only via PR)
+allowedTools:
+  - "Read(./**)"
+  - "Write(./00_documentation/**)"
+  - "Write(./01_raw_data/**)"
+  - "Write(./02_preprocessing/**)"
+  - "Write(./03_pca_analysis/**)"
+  - "Write(./04_advanced_mvs/**)"
+  - "Write(./05_chemical_interpretation/**)"
+  - "Write(./06_visualization/**)"
+  - "Write(./07_statistical_analysis/**)"
+  - "Write(./08_integration/**)"
+  - "Write(./_shared/**)"
+  - "Write(./results/**)"
+  - "Bash(python:*)"
+  - "Bash(micromamba:*)"
+  - "Bash(git status)"
+  - "Bash(git diff:*)"
+ask:
+  - "Bash(git add:*)"
+  - "Bash(git commit:*)"
+  - "Bash(git push:*)"
+  - "Bash(rm -rf:*)"
+deny:
+  - "WebFetch"           # network off by default
+  - "Bash(curl:*)"
+  - "Read(./.env)"
+  - "Read(./secrets/**)"
+  - "Write(./)"          # no writes to repo root
+  - "Write(../**)"       # can't escape repo
+
+behavior:
+  forbid_synthetic_data: true
+  stop_on_missing_input: true
+  require_status_update_on_success: true
+  require_status_update_on_error: true
+
+additionalDirectories:
+  - "./_shared"
+
+provenance:
+  record_inputs_in_sidecar: true
+  record_git_hash: true
+
+# Guard a few bad patterns explicitly
+deny_write:
+  - "qc/*"               # root qc is index-only
+  - "results/*/*.tmp"
+  - "*.pyc"
+  - ".*/"
+  - "/*"

@@ -1,0 +1,255 @@
+{
+  "method_used": "Vector_sqrt",
+  "best_spatial_weighting": "adjacency",
+  "pca_vs_maf_comparison": {
+    "pca_dose_correlation_pc1": 0.8837824554557693,
+    "pca_explained_variance_pc1": 0.8934572522589691,
+    "maf_adjacency_dose_correlation_1": 0.032732683535398856,
+    "maf_adjacency_explained_variance_1": 0.1635454082646068,
+    "maf_adjacency_improvement_correlation": -0.8510497719203705,
+    "maf_adjacency_spatial_coherence_1": -1.0467607200933304,
+    "maf_distance_dose_correlation_1": 0.13093073414159542,
+    "maf_distance_explained_variance_1": 0.28368779328894606,
+    "maf_distance_improvement_correlation": -0.7528517213141739,
+    "maf_distance_spatial_coherence_1": 0.6191403852069008,
+    "maf_dose_pattern_dose_correlation_1": 0.0,
+    "maf_dose_pattern_explained_variance_1": 0.4008223267666715,
+    "maf_dose_pattern_improvement_correlation": -0.8837824554557693,
+    "maf_dose_pattern_spatial_coherence_1": 0.9999579509078177
+  },
+  "spatial_coherence_analysis": {
+    "adjacency": {
+      "MAF1": {
+        "moran_i": -1.0467607200933304,
+        "local_variation": 0.00654011508551026,
+        "global_variance": 4.356444516881101e-05
+      },
+      "MAF2": {
+        "moran_i": 0.9759421639328786,
+        "local_variation": 0.00828484015087516,
+        "global_variance": 7.325070692945674e-05
+      },
+      "MAF3": {
+        "moran_i": -0.9768132443314799,
+        "local_variation": 0.006238400913725434,
+        "global_variance": 4.073080281193476e-05
+      },
+      "MAF4": {
+        "moran_i": 0.8976654389369892,
+        "local_variation": 0.008950469399336353,
+        "global_variance": 9.423654089683348e-05
+      },
+      "MAF5": {
+        "moran_i": -0.8821025706490693,
+        "local_variation": 0.007750114236364841,
+        "global_variance": 7.29722977592712e-05
+      },
+      "MAF6": {
+        "moran_i": -0.2169002540997965,
+        "local_variation": 0.006752398082595753,
+        "global_variance": 5.25130850897139e-05
+      },
+      "MAF7": {
+        "moran_i": 0.21663753825233104,
+        "local_variation": 0.004818408249580213,
+        "global_variance": 4.577170696020978e-05
+      },
+      "MAF8": {
+        "moran_i": 0.6082133701011003,
+        "local_variation": 0.00597750101262441,
+        "global_variance": 8.087544866314861e-05
+      },
+      "MAF9": {
+        "moran_i": -0.591358732448297,
+        "local_variation": 0.004574745875650444,
+        "global_variance": 4.570106276033482e-05
+      },
+      "MAF10": {
+        "moran_i": 0.40795159581244406,
+        "local_variation": 0.008750299839575123,
+        "global_variance": 0.0003319241219433819
+      }
+    },
+    "distance": {
+      "MAF1": {
+        "moran_i": 0.6191403852069008,
+        "local_variation": 0.004423513476029711,
+        "global_variance": 4.223204156754713e-05
+      },
+      "MAF2": {
+        "moran_i": 0.45883341702605923,
+        "local_variation": 0.004049472800421418,
+        "global_variance": 6.73249322276616e-05
+      },
+      "MAF3": {
+        "moran_i": -0.32773524958898054,
+        "local_variation": 0.0031650668479546703,
+        "global_variance": 0.00010349246108492754
+      },
+      "MAF4": {
+        "moran_i": -0.32073442445240147,
+        "local_variation": 0.0026260547595928366,
+        "global_variance": 7.905655904135868e-05
+      },
+      "MAF5": {
+        "moran_i": -0.31718611511774963,
+        "local_variation": 0.0025328563323385477,
+        "global_variance": 5.6255544884755896e-05
+      },
+      "MAF6": {
+        "moran_i": -0.2897559078506447,
+        "local_variation": 0.0025506881794667043,
+        "global_variance": 5.9109758425529776e-05
+      },
+      "MAF7": {
+        "moran_i": -0.27874231363265434,
+        "local_variation": 0.0016139465506876925,
+        "global_variance": 3.56203610409534e-05
+      },
+      "MAF8": {
+        "moran_i": 0.2521637854908812,
+        "local_variation": 0.0022829809605109832,
+        "global_variance": 3.017437719508414e-05
+      },
+      "MAF9": {
+        "moran_i": -0.29513288866408777,
+        "local_variation": 0.002654786138067145,
+        "global_variance": 3.576414567241858e-05
+      },
+      "MAF10": {
+        "moran_i": -0.2540828813006281,
+        "local_variation": 0.002589006390997981,
+        "global_variance": 6.78886362096709e-05
+      }
+    },
+    "dose_pattern": {
+      "MAF1": {
+        "moran_i": 0.9999579509078177,
+        "local_variation": 0.012839221464966095,
+        "global_variance": 0.00016485080669652135
+      },
+      "MAF2": {
+        "moran_i": 0.9997853844953656,
+        "local_variation": 0.00962268101334354,
+        "global_variance": 9.261089668530735e-05
+      },
+      "MAF3": {
+        "moran_i": -0.2499999999797647,
+        "local_variation": 0.09804631096983739,
+        "global_variance": 0.15380926547935658
+      },
+      "MAF4": {
+        "moran_i": -0.2499999999953174,
+        "local_variation": 0.04199146306597623,
+        "global_variance": 0.02821252752515465
+      },
+      "MAF5": {
+        "moran_i": -0.24999999494856306,
+        "local_variation": 0.007186039229466412,
+        "global_variance": 0.0008262265068353117
+      },
+      "MAF6": {
+        "moran_i": -0.24999995781250117,
+        "local_variation": 0.004566185159811422,
+        "global_variance": 0.00033360058173362354
+      },
+      "MAF7": {
+        "moran_i": -0.2499999631858565,
+        "local_variation": 0.0026955207436778236,
+        "global_variance": 0.00011625326191638788
+      },
+      "MAF8": {
+        "moran_i": -0.24999996202730662,
+        "local_variation": 0.002393431865201318,
+        "global_variance": 9.165621572857636e-05
+      },
+      "MAF9": {
+        "moran_i": -0.24999971577982827,
+        "local_variation": 0.002173279666478622,
+        "global_variance": 7.557005439726482e-05
+      },
+      "MAF10": {
+        "moran_i": -0.24999989843668569,
+        "local_variation": 0.0016457826208941386,
+        "global_variance": 4.333755414572723e-05
+      }
+    }
+  },
+  "dose_correlations": {
+    "adjacency": {
+      "MAF1": {
+        "rho": 0.032732683535398856,
+        "p": 0.907807194891725
+      },
+      "MAF2": {
+        "rho": -0.0545544725589981,
+        "p": 0.8468800214510516
+      },
+      "MAF3": {
+        "rho": -0.2727723627949905,
+        "p": 0.32530525572933466
+      },
+      "MAF4": {
+        "rho": -0.04364357804719848,
+        "p": 0.8772636745026666
+      },
+      "MAF5": {
+        "rho": 0.032732683535398856,
+        "p": 0.907807194891725
+      }
+    },
+    "distance": {
+      "MAF1": {
+        "rho": 0.13093073414159542,
+        "p": 0.6418518188801541
+      },
+      "MAF2": {
+        "rho": 0.20730699572419276,
+        "p": 0.45847894123495225
+      },
+      "MAF3": {
+        "rho": -0.24003967925959163,
+        "p": 0.3888424909191657
+      },
+      "MAF4": {
+        "rho": 0.6328318816843779,
+        "p": 0.011340463586176727
+      },
+      "MAF5": {
+        "rho": -0.14184162865339506,
+        "p": 0.6140829092192246
+      }
+    },
+    "dose_pattern": {
+      "MAF1": {
+        "rho": 0.0,
+        "p": 1.0
+      },
+      "MAF2": {
+        "rho": -0.032732683535398856,
+        "p": 0.907807194891725
+      },
+      "MAF3": {
+        "rho": -0.8837824554557693,
+        "p": 1.2428949604302423e-05
+      },
+      "MAF4": {
+        "rho": -0.8837824554557693,
+        "p": 1.2428949604302423e-05
+      },
+      "MAF5": {
+        "rho": -0.04364357804719848,
+        "p": 0.8772636745026666
+      }
+    }
+  },
+  "dataset_info": {
+    "n_samples": 15,
+    "n_masses": 923,
+    "mass_range": [
+      0.0,
+      922.0
+    ],
+    "sample_info": "                 dose pattern\nP1_SQ1_r500     500.0      P1\nP1_SQ2_2000    2000.0      P1\nP1_SQ3_5000    5000.0      P1\nP1_SQ4_10000  10000.0      P1\nP1_SQ5_15000  15000.0      P1\nP2_SQ1_r500     500.0      P2\nP2_SQ2_2000    2000.0      P2\nP2_SQ3_5000    5000.0      P2\nP2_SQ4_10000  10000.0      P2\nP2_SQ5_15000  15000.0      P2\nP3_SQ1_r500     500.0      P3\nP3_SQ2_2000    2000.0      P3\nP3_SQ3_5000    5000.0      P3\nP3_SQ4_10000  10000.0      P3\nP3_SQ5_15000  15000.0      P3"
+  }
+}

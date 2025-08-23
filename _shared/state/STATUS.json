@@ -1,0 +1,24 @@
+{
+  "project": "ToF-SIMS Alucone Dose Study",
+  "phase": "0",
+  "phase_name": "Setup",
+  "progress": {"percent": 100, "summary": "Phase 0 complete (structure, guardrails, validator)"},
+  "next_steps": [
+    "Phase 1 audit"
+  ],
+  "issues": [],
+  "artifacts": [
+    "00_documentation/STRUCTURE_AUDIT.md",
+    "00_documentation/CLEANUP_ACTIONS.md", 
+    "results/README.md",
+    "roi/README.md",
+    "qc/README.md"
+  ],
+  "locations": {
+    "project_root": "/home/dreece23/sims-pca-ws",
+    "literature": "00_documentation/literature",
+    "pos_tsv": "out/all_positive_data_renamed.tsv",
+    "neg_tsv": "out/all_negative_data_renamed.tsv"
+  },
+  "updated_at": ""
+}

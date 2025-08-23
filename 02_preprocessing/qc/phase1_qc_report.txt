@@ -1,0 +1,40 @@
+
+ToF-SIMS Data Quality Control Report
+===================================
+Generated: 2025-08-22 23:34:42
+Project: ToF-SIMS Analysis of E-beam Induced Alucone Degradation
+
+FILE INTEGRITY
+--------------
+Expected files: 90
+Readable files: 60
+Missing files: 0
+
+DATA COMPLETENESS  
+-----------------
+Total sample combinations: 30
+Available combinations: 30
+Missing combinations: 0
+
+DOSE DISTRIBUTION
+-----------------
+500 μC/cm²: 6 files\n2000 μC/cm²: 6 files\n5000 μC/cm²: 6 files\n10000 μC/cm²: 6 files\n15000 μC/cm²: 6 files\n
+MASS RANGES
+-----------
+Positive: 0-929 u
+Negative: 0-922 u
+
+ISSUES IDENTIFIED
+-----------------
+Total issues: 30
+1. Cannot read P1_SQ1r_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n2. Cannot read P1_SQ1_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n3. Cannot read P1_SQ2_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n4. Cannot read P1_SQ3_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n5. Cannot read P1_SQ4_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n6. Cannot read P2_SQ1r_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n7. Cannot read P2_SQ1_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n8. Cannot read P2_SQ2_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n9. Cannot read P2_SQ3_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n10. Cannot read P2_SQ4_01.itm: Missing block "/propend/Registration.Raster.ShotsPerPixel" with index 0\n... and 20 more issues\n
+OVERALL STATUS
+--------------
+⚠ REVIEW - Issues require attention
+
+NEXT STEPS
+----------
+1. Address any critical issues identified above
+2. Proceed to Phase 2: Preprocessing Pipeline
+3. Implement ITM workarounds for missing metadata blocks
+4. Consider data completeness when designing analysis groups

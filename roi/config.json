@@ -1,0 +1,133 @@
+{
+  "project_name": "ToF-SIMS Alucone E-beam Dose Series",
+  "analysis_date": "2025-08-22",
+  "dose_mapping": {
+    "SQ1r": 500,
+    "SQ1": 2000,
+    "SQ2": 5000,
+    "SQ3": 10000,
+    "SQ4": 15000
+  },
+  "mass_families": {
+    "positive": {
+      "aromatic_proxies": [
+        65,
+        77,
+        91,
+        63,
+        79
+      ],
+      "aliphatic": [
+        41,
+        43,
+        55,
+        57,
+        67,
+        69
+      ],
+      "oxygenates": [
+        31,
+        45,
+        59,
+        60,
+        28,
+        44
+      ],
+      "metal_oxides": [
+        27,
+        43,
+        59
+      ],
+      "hydrocarbons": [
+        29,
+        41,
+        43,
+        55
+      ]
+    },
+    "negative": {
+      "oxygenates": [
+        31,
+        45,
+        59,
+        60,
+        28,
+        44
+      ],
+      "al_o_families": [
+        43,
+        59
+      ],
+      "h_loss": [
+        16,
+        17,
+        18
+      ],
+      "oxide_formation": [
+        16,
+        17
+      ],
+      "al_c_bonds": [
+        39,
+        55,
+        71
+      ],
+      "carbonyl": [
+        44,
+        45,
+        60
+      ]
+    }
+  },
+  "naming_conventions": {
+    "imzml_files": {
+      "pattern": "P{pattern}_{polarity}.imzML",
+      "examples": [
+        "P1_positive.imzML",
+        "P1_negative.imzML",
+        "P2_positive.imzML"
+      ]
+    },
+    "roi_tsvs": {
+      "pattern": "all_{polarity}_roi.tsv",
+      "examples": [
+        "all_positive_roi.tsv",
+        "all_negative_roi.tsv"
+      ]
+    },
+    "column_labels": {
+      "pattern": "P{pattern}_{dose}uC-{pol}",
+      "examples": [
+        "P1_500uC-P",
+        "P2_2000uC-N"
+      ]
+    },
+    "index_files": {
+      "pattern": "P{pattern}_{polarity}.index.json",
+      "examples": [
+        "P1_positive.index.json",
+        "P1_negative.index.json"
+      ]
+    }
+  },
+  "folders": {
+    "data": "imzML + ibd exports (pos/neg; P1-P3)",
+    "out": "sum-spectrum TSVs and ROI TSVs",
+    "roi": "ROI definitions and overlays",
+    "results": "analysis results by polarity and method",
+    "qc": "quality control and diagnostics",
+    "meta": "metadata and catalogs"
+  },
+  "analysis_methods": {
+    "normalization": [
+      "baseline_TICsqrt",
+      "robust_PQNsqrtPareto"
+    ],
+    "statistical_tests": [
+      "welch_t_test",
+      "spearman_correlation"
+    ],
+    "multiple_comparison": "benjamini_hochberg_fdr",
+    "pca_ellipses": "hotelling_t2_90pct"
+  }
+}

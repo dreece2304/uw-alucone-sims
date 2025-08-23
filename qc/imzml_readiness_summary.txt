@@ -1,0 +1,51 @@
+=== Imaging Data Readiness Summary ===
+Analysis Date: 2025-08-22
+
+Library Status:
+  pySPM: Available
+  pyimzML: Available
+
+Files Found:
+  ITM: 30 files
+  ITMX: 30 files
+
+Analyzed Files:
+  Total: 30
+  Readable: 30
+  Index files created: 30
+
+File Details:
+  P3_SQ1r_01.itm: P3 positive, 65536 spectra, unknown-unknown u
+  P1_SQ1r_01.itm: P1 positive, 65536 spectra, unknown-unknown u
+  P3_SQ1_01.itm: P3 positive, 65536 spectra, unknown-unknown u
+  P2_SQ1r_01.itm: P2 positive, 65536 spectra, unknown-unknown u
+  P1_SQ1_01.itm: P1 positive, 65536 spectra, unknown-unknown u
+  P3_SQ2_01.itm: P3 positive, 65536 spectra, unknown-unknown u
+  P3_SQ4_01.itm: P3 positive, 65536 spectra, unknown-unknown u
+  P1_SQ4_01.itm: P1 positive, 65536 spectra, unknown-unknown u
+  P2_SQ3_01.itm: P2 positive, 65536 spectra, unknown-unknown u
+  P1_SQ3_01.itm: P1 positive, 65536 spectra, unknown-unknown u
+  P1_SQ2_01.itm: P1 positive, 65536 spectra, unknown-unknown u
+  P2_SQ1_01.itm: P2 positive, 65536 spectra, unknown-unknown u
+  P3_SQ3_01.itm: P3 positive, 65536 spectra, unknown-unknown u
+  P2_SQ2_01.itm: P2 positive, 65536 spectra, unknown-unknown u
+  P2_SQ4_01.itm: P2 positive, 65536 spectra, unknown-unknown u
+  P1_SQ2_06.itm: P1 negative, 65536 spectra, unknown-unknown u
+  P2_SQ4_06.itm: P2 negative, 65536 spectra, unknown-unknown u
+  P2_SQ1_06.itm: P2 negative, 65536 spectra, unknown-unknown u
+  P3_SQ1_06.itm: P3 negative, 65536 spectra, unknown-unknown u
+  P1_SQ3_06.itm: P1 negative, 65536 spectra, unknown-unknown u
+  P3_SQ3_06.itm: P3 negative, 65536 spectra, unknown-unknown u
+  P2_SQ2_06.itm: P2 negative, 65536 spectra, unknown-unknown u
+  P2_SQ3_06.itm: P2 negative, 65536 spectra, unknown-unknown u
+  P2_SQ1r_06.itm: P2 negative, 65536 spectra, unknown-unknown u
+  P3_SQ2_06.itm: P3 negative, 65536 spectra, unknown-unknown u
+  P1_SQ4_06.itm: P1 negative, 65536 spectra, unknown-unknown u
+  P1_SQ1_06.itm: P1 negative, 65536 spectra, unknown-unknown u
+  P3_SQ4_06.itm: P3 negative, 65536 spectra, unknown-unknown u
+  P1_SQ1r_06.itm: P1 negative, 65536 spectra, unknown-unknown u
+  P3_SQ1r_06.itm: P3 negative, 65536 spectra, unknown-unknown u
+
+Recommendations:
+  ⚠ Only ITM files found - consider exporting to imzML for broader compatibility
+  ✓ Can proceed with ITM files using pySPM

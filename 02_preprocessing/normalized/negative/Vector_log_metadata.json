@@ -1,0 +1,16 @@
+{
+  "normalization": "Vector",
+  "transformation": "log",
+  "n_samples": 15,
+  "n_masses": 923,
+  "mass_range": [
+    0.0,
+    922.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.001762938704476914,
+    "std_intensity": 0.011257793562365701,
+    "zero_fraction": 0.10364752618273745,
+    "dynamic_range": 444661.835243039
+  }
+}

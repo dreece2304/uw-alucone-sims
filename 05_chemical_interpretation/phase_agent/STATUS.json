@@ -1,0 +1,13 @@
+{
+  "phase": "05",
+  "name": "Chemical Interpretation",
+  "status": "idle",
+  "inputs_expected": ["02_preprocessing/normalized/*", "03_pca_analysis/baseline/*", "04_advanced_mvs/nmf/*"],
+  "outputs_planned": ["05_chemical_interpretation/dose_response/*", "05_chemical_interpretation/indices/*", "05_chemical_interpretation/peak_assignment/*"],
+  "progress": {"percent": 0, "detail": ""},
+  "issues": [],
+  "last_run": "",
+  "upstream": ["02_preprocessing", "03_pca_analysis", "04_advanced_mvs"],
+  "downstream": ["06_visualization", "07_statistical_analysis"],
+  "uses_utils": ["_shared/utils/*"]
+}

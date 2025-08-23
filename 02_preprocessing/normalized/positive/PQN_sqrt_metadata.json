@@ -1,0 +1,16 @@
+{
+  "normalization": "PQN",
+  "transformation": "sqrt",
+  "n_samples": 15,
+  "n_masses": 930,
+  "mass_range": [
+    0.0,
+    929.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.018195760103267546,
+    "std_intensity": 0.02727972015011588,
+    "zero_fraction": 0.09254480286738351,
+    "dynamic_range": 862.7790598654875
+  }
+}

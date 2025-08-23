@@ -1,0 +1,13 @@
+__pycache__/
+.ipynb_checkpoints/
+env/
+*.pyc
+*.pyo
+# raw instrument & huge intermediates (keep outside repo or upload elsewhere)
+*.itax
+*.itm
+*.itmx
+*.ita
+*.imzML
+*.ibd
+*/working_extraction/**

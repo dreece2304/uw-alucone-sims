@@ -1,0 +1,9 @@
+phase: "02_preprocessing"
+working_dir: "/home/dreece23/sims-pca-ws/02_preprocessing"
+allow_write:
+  - "02_preprocessing/**"
+read_only_inputs:
+  - "/home/dreece23/sims-pca-ws/out/*_renamed.tsv"
+  - "/home/dreece23/sims-pca-ws/01_raw_data/extracted/**"
+  - "/home/dreece23/sims-pca-ws/_shared/**"
+require_update: "/home/dreece23/sims-pca-ws/_shared/state/STATUS.json"

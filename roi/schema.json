@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "name": "ToF-SIMS Alucone E-beam Dose Series",
+    "date": "2025-08-22",
+    "image_dimensions": {
+      "pixels_x": 256,
+      "pixels_y": 256,
+      "total_pixels": 65536
+    }
+  },
+  "dose_mapping": {
+    "SQ1r": 500,
+    "SQ1": 2000,
+    "SQ2": 5000,
+    "SQ3": 10000,
+    "SQ4": 15000
+  },
+  "roi_definitions": {
+    "SQ1r_500uC": {
+      "coordinates": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "center": [
+        60,
+        60
+      ],
+      "dose": 500,
+      "description": "Low dose reference area"
+    },
+    "SQ1_2000uC": {
+      "coordinates": [
+        120,
+        40,
+        40,
+        40
+      ],
+      "center": [
+        140,
+        60
+      ],
+      "dose": 2000,
+      "description": "Low dose area"
+    },
+    "SQ2_5000uC": {
+      "coordinates": [
+        40,
+        120,
+        40,
+        40
+      ],
+      "center": [
+        60,
+        140
+      ],
+      "dose": 5000,
+      "description": "Medium dose area"
+    },
+    "SQ3_10000uC": {
+      "coordinates": [
+        120,
+        120,
+        40,
+        40
+      ],
+      "center": [
+        140,
+        140
+      ],
+      "dose": 10000,
+      "description": "High dose area"
+    },
+    "SQ4_15000uC": {
+      "coordinates": [
+        180,
+        80,
+        40,
+        40
+      ],
+      "center": [
+        200,
+        100
+      ],
+      "dose": 15000,
+      "description": "Maximum dose area"
+    }
+  },
+  "extraction_parameters": {
+    "unit_mass_binning": true,
+    "mass_range": [
+      0,
+      300
+    ],
+    "normalization_method": "roi_sum",
+    "background_subtraction": false
+  },
+  "file_mapping": {
+    "positive_patterns": [
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "negative_patterns": [
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "file_suffix_positive": "_01.itm",
+    "file_suffix_negative": "_06.itm"
+  }
+}

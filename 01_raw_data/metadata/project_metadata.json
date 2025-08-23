@@ -1,0 +1,55 @@
+{
+  "project": {
+    "title": "ToF-SIMS Analysis of E-beam Induced Alucone Degradation",
+    "description": "Comprehensive multivariate analysis of dose-dependent chemical changes in alucone organic-inorganic hybrid materials exposed to electron beam lithography",
+    "created_date": "2025-08-23",
+    "analysis_framework": "Literature-guided PCA with advanced MVA techniques"
+  },
+  "sample_design": {
+    "material": "Alucone (trimethylaluminum + 2-butyne-1,4-diol)",
+    "substrate": "Silicon wafer",
+    "features": "5 × 100μm square regions per pattern",
+    "patterns": ["P1", "P2", "P3"],
+    "exposure_method": "Electron beam lithography",
+    "dose_units": "μC/cm²"
+  },
+  "dose_mapping": {
+    "SQ1r": {"dose": 500, "description": "Lowest dose - potentially transparent/conjugated"},
+    "SQ1": {"dose": 2000, "description": "Low dose - partial degradation onset"},
+    "SQ2": {"dose": 5000, "description": "Medium dose - significant degradation"},
+    "SQ3": {"dose": 10000, "description": "High dose - major transformations"},
+    "SQ4": {"dose": 15000, "description": "Highest dose - potential graphitization"}
+  },
+  "hypothesis": {
+    "primary": "Progressive dose-dependent transformation: transparent/conjugated → degraded → graphitized while retaining Al-O centers",
+    "warning": "Analysis should not force data to fit hypothesis - let data guide conclusions"
+  },
+  "instrumentation": {
+    "technique": "ToF-SIMS imaging",
+    "instrument": "IONTOF system",
+    "primary_ion": "Bi cluster ions",
+    "polarities": ["positive", "negative"],
+    "file_format": "ITM/ITAX/ITMX"
+  },
+  "data_structure": {
+    "positive_files": 15,
+    "negative_files": 15,
+    "total_samples": 30,
+    "known_issues": ["Missing ShotsPerPixel metadata blocks", "Missing filterdata blocks"],
+    "workarounds": ["Alternative ITM initialization", "pySPM compatibility fixes"]
+  },
+  "analysis_goals": {
+    "primary": [
+      "PCA-based dimensionality reduction",
+      "Dose-response relationship identification", 
+      "Chemical mechanism elucidation",
+      "Spatial pattern recognition"
+    ],
+    "advanced": [
+      "Multi-method MVA comparison (PCA vs NMF vs MCR-ALS vs MAF)",
+      "Automated chemical interpretation",
+      "Statistical validation with bootstrap/cross-validation",
+      "Publication-ready visualization"
+    ]
+  }
+}

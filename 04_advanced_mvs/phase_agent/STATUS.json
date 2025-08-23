@@ -1,0 +1,13 @@
+{
+  "phase": "04",
+  "name": "Advanced Multivariate",
+  "status": "idle",
+  "inputs_expected": ["02_preprocessing/normalized/*", "03_pca_analysis/baseline/*"],
+  "outputs_planned": ["04_advanced_mvs/nmf/*", "04_advanced_mvs/mcr_als/*", "04_advanced_mvs/nldr/*"],
+  "progress": {"percent": 0, "detail": ""},
+  "issues": [],
+  "last_run": "",
+  "upstream": ["02_preprocessing", "03_pca_analysis"],
+  "downstream": ["05_chemical_interpretation", "06_visualization"],
+  "uses_utils": ["_shared/utils/*"]
+}

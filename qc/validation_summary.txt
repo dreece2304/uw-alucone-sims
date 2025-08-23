@@ -1,0 +1,36 @@
+=== ToF-SIMS Alucone Dose-Series QC Summary ===
+Analysis Date: 2025-08-22 20:40:08.237601
+
+=== POSITIVE ION MODE ===
+Total samples: 15
+Total masses: 930
+Mass range: 0 - 929 u
+Mass gaps (>1 u): 0
+Non-integer masses: 0
+Non-increasing masses: 0
+
+Intensity Quality:
+  Mean TIC: 2.34e+06
+  TIC CV%: 50.3%
+  TIC Range: 3.49e+05 - 4.16e+06
+  Zero-sum samples: 0
+  Samples with negatives: 0
+
+No outlier samples detected.
+
+=== NEGATIVE ION MODE ===
+Total samples: 15
+Total masses: 923
+Mass range: 0 - 922 u
+Mass gaps (>1 u): 0
+Non-integer masses: 0
+Non-increasing masses: 0
+
+Intensity Quality:
+  Mean TIC: 2.71e+06
+  TIC CV%: 29.2%
+  TIC Range: 1.28e+06 - 3.92e+06
+  Zero-sum samples: 0
+  Samples with negatives: 0
+
+No outlier samples detected.

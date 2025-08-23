@@ -1,0 +1,15 @@
+1-P	itax:P1_SQ1_01.itax
+2-P	itax:P1_SQ1r_01.itax
+3-P	itax:P1_SQ2_01.itax
+4-P	itax:P1_SQ3_01.itax
+5-P	itax:P1_SQ4_01.itax
+6-P	itax:P2_SQ1_01.itax
+7-P	itax:P2_SQ1r_01.itax
+8-P	itax:P2_SQ2_01.itax
+9-P	itax:P2_SQ3_01.itax
+10-P	itax:P2_SQ4_01.itax
+11-P	itax:P3_SQ1_01.itax
+12-P	itax:P3_SQ1r_01.itax
+13-P	itax:P3_SQ2_01.itax
+14-P	itax:P3_SQ3_01.itax
+15-P	itax:P3_SQ4_01.itax

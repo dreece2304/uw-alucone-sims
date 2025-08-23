@@ -1,0 +1,29 @@
+
+ToF-SIMS Imaging Analysis Folder Structure
+==========================================
+
+data/           # .imzML + .ibd exports (pos/neg; P1–P3)
+out/            # existing sum-spectrum TSVs (already done)
+├── roi/        # ROI-extracted TSV files
+roi/            # ROI definitions and overlays  
+├── schema.json # ROI coordinate definitions
+├── overlays/   # ROI visualization PNGs
+results/        # analysis results
+├── positive/
+│   ├── baseline_TICsqrt/
+│   └── robust_PQNsqrtPareto/
+├── negative/
+│   ├── baseline_TICsqrt/
+│   └── robust_PQNsqrtPareto/
+├── comparison/ # ROI vs sum-spectrum comparisons
+qc/            # quality control reports
+meta/          # metadata catalogs
+
+File Naming Conventions:
+- imzML: P1_positive.imzML, P1_negative.imzML, etc.
+- ROI TSVs: all_positive_roi.tsv, all_negative_roi.tsv
+- Columns: P{pattern}_{dose}uC-{pol} (e.g., P1_500uC-P)
+- Index: P{pattern}_{polarity}.index.json
+
+Dose Mapping:
+500, 2000, 5000, 10000, 15000 µC/cm² (SQ1r, SQ1, SQ2, SQ3, SQ4)

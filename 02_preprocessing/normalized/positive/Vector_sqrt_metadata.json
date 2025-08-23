@@ -1,0 +1,16 @@
+{
+  "normalization": "Vector",
+  "transformation": "sqrt",
+  "n_samples": 15,
+  "n_masses": 930,
+  "mass_range": [
+    0.0,
+    929.0
+  ],
+  "statistics": {
+    "mean_intensity": 0.04314592605742972,
+    "std_intensity": 0.06453261837560183,
+    "zero_fraction": 0.09254480286738351,
+    "dynamic_range": 727.1095224687124
+  }
+}

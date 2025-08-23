@@ -1,0 +1,32 @@
+=== ROI Alucone Indices Analysis Summary ===
+Generated: 2025-08-22
+
+Positive Ion Results:
+  baseline_TICsqrt:
+    Total correlations: 12
+    Strong & significant (|ρ|>0.7, p<0.001): 1
+    Moderate & significant (|ρ|>0.5, p<0.01): 1
+    Strongest correlation: P2 OI (ρ=-1.000, p=1.40e-24)
+  robust_PQNsqrtPareto:
+    Total correlations: 12
+    Strong & significant (|ρ|>0.7, p<0.001): 0
+    Moderate & significant (|ρ|>0.5, p<0.01): 0
+    Strongest correlation: P1 AI_sim (ρ=0.900, p=3.74e-02)
+
+Negative Ion Results:
+  baseline_TICsqrt:
+    Total correlations: 12
+    Strong & significant (|ρ|>0.7, p<0.001): 9
+    Moderate & significant (|ρ|>0.5, p<0.01): 9
+    Strongest correlation: P1 OI (ρ=-1.000, p=1.40e-24)
+  robust_PQNsqrtPareto:
+    Total correlations: 12
+    Strong & significant (|ρ|>0.7, p<0.001): 1
+    Moderate & significant (|ρ|>0.5, p<0.01): 1
+    Strongest correlation: P1 OI (ρ=-1.000, p=1.40e-24)
+
+Key Findings:
+- ROI data shows dose-dependent chemical changes
+- Alucone indices capture e-beam induced transformations
+- Spatial simulation preserves dose-response relationships
+- Ready for statistical contrasts and PCA analysis

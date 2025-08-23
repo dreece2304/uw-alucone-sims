@@ -1,0 +1,13 @@
+{
+  "phase": "03",
+  "name": "PCA",
+  "status": "idle",
+  "inputs_expected": ["out/all_positive_data_renamed.tsv", "out/all_negative_data_renamed.tsv", "02_preprocessing/normalized/*"],
+  "outputs_planned": ["03_pca_analysis/baseline/*", "03_pca_analysis/robust/*", "03_pca_analysis/spatial/*"],
+  "progress": {"percent": 0, "detail": ""},
+  "issues": [],
+  "last_run": "",
+  "upstream": ["02_preprocessing"],
+  "downstream": ["05_chemical_interpretation", "06_visualization"],
+  "uses_utils": ["_shared/utils/*"]
+}

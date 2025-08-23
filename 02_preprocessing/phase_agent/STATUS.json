@@ -1,0 +1,13 @@
+{
+  "phase": "02",
+  "name": "Preprocessing",
+  "status": "idle",
+  "inputs_expected": ["out/all_positive_data_renamed.tsv", "out/all_negative_data_renamed.tsv"],
+  "outputs_planned": ["02_preprocessing/normalized/*", "02_preprocessing/qc/*"],
+  "progress": {"percent": 0, "detail": ""},
+  "issues": [],
+  "last_run": "",
+  "upstream": ["01_raw_data"],
+  "downstream": ["03_pca_analysis", "05_chemical_interpretation"],
+  "uses_utils": ["_shared/utils/*"]
+}

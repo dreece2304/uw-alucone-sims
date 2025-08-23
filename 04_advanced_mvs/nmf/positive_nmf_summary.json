@@ -1,0 +1,36 @@
+{
+  "method_used": "TIC_sqrt",
+  "pca_vs_nmf_comparison": {
+    "pca_dose_correlation_pc1": -0.39279220242478624,
+    "pca_explained_variance_total": 0.991946740709594,
+    "best_nmf_algorithm": "multiplicative",
+    "best_nmf_n_components": 7,
+    "best_nmf_dose_correlation": 0.8520859229960716,
+    "best_nmf_explained_variance": 0.35810377836699947,
+    "nmf_vs_pca_correlation_improvement": 0.4592937205712853,
+    "nmf_vs_pca_sparsity_W": 0.5714285714285714,
+    "nmf_vs_pca_sparsity_H": 0.6403993855606759
+  },
+  "algorithm_performance": {
+    "multiplicative": {
+      "optimal_components": 6,
+      "best_reconstruction_error": 0.0006311404502642179
+    },
+    "coordinate_descent": {
+      "optimal_components": 4,
+      "best_reconstruction_error": 0.0003004487088262607
+    }
+  },
+  "dataset_info": {
+    "n_samples": 15,
+    "n_masses": 930,
+    "mass_range": [
+      0.0,
+      929.0
+    ],
+    "scaling_info": {
+      "min_shift": -0.1483047604185491,
+      "max_scale": 0.26866983445922477
+    }
+  }
+}

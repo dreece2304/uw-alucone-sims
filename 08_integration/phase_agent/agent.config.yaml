@@ -1,0 +1,13 @@
+phase: "08_integration"
+working_dir: "/home/dreece23/sims-pca-ws/08_integration"
+allow_write:
+  - "08_integration/**"
+  - "00_documentation/reports/**"
+read_only_inputs:
+  - "/home/dreece23/sims-pca-ws/03_pca_analysis/**"
+  - "/home/dreece23/sims-pca-ws/04_advanced_mvs/**"
+  - "/home/dreece23/sims-pca-ws/05_chemical_interpretation/**"
+  - "/home/dreece23/sims-pca-ws/06_visualization/**"
+  - "/home/dreece23/sims-pca-ws/07_statistical_analysis/**"
+  - "/home/dreece23/sims-pca-ws/_shared/**"
+require_update: "/home/dreece23/sims-pca-ws/_shared/state/STATUS.json"
