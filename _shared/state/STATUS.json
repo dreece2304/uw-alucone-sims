@@ -4,7 +4,7 @@
   "phase_name": "Data Audit",
   "progress": {
     "percent": 100,
-    "summary": "Phase 1 complete - TSV validated; folder hygiene clean"
+    "summary": "Phase 1 complete - TSV & hygiene pass"
   },
   "next_steps": [
     "Phase 2: preprocessing (baseline TIC\u2192\u221a and robust PQN\u2192\u221a\u2192Pareto)"
@@ -27,5 +27,5 @@
     "pos_tsv": "out/all_positive_data_renamed.tsv",
     "neg_tsv": "out/all_negative_data_renamed.tsv"
   },
-  "updated_at": "2025-08-23T19:56:26.035950Z"
+  "updated_at": "2025-08-23T20:06:38.066217Z"
 }
