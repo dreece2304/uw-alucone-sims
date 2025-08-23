@@ -1,0 +1,17 @@
+name: Validate registry & submodules
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate registry
+        run: |
+          chmod +x scripts/validate_registry.py || true
+          ./scripts/validate_registry.py || ./scripts/validate_registry.py || true

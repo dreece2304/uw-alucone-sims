@@ -48,6 +48,14 @@
 
 **Statistical framework**: Paired volcano plot analysis will identify dose-responsive peaks, complemented by custom alucone chemical indices tracking aromatic conjugation, cross-linking, and degradation markers across the dose series.
 
+## Versioning & Provenance
+
+Raw instrument formats (*.itax, *.itm, *.itmx, *.ita, *.imzML, *.ibd) are not versioned.
+
+Large artifacts (PNG, PDF, NPZ) use Git LFS.
+
+Environment is locked via env/requirements-lock.txt (tracked).
+
 ## Environment Capture
 
 **Computational reproducibility**: All analysis environments are captured in `env/requirements-lock.txt` with pinned dependency versions to ensure exact computational reproducibility across different systems and time points. Every generated figure and table must record both the environment lock file path and the current git commit hash in an accompanying sidecar JSON file (e.g., `figure1.provenance.json`), enabling complete reconstruction of the computational environment and code state that produced each result. This comprehensive provenance tracking ensures that all findings can be independently verified and reproduced by other researchers.

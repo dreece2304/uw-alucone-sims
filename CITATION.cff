@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "SIMS-PCA Workspace: Time-of-Flight Secondary Ion Mass Spectrometry Principal Component Analysis"
-abstract: "A structured workspace for principal component analysis of ToF-SIMS data with automated preprocessing, multivariate statistics, and reproducible analytical workflows."
+title: "ToF-SIMS Alucone Dose Study"
+abstract: "Quantitative analysis of dose-dependent chemical transformations in alucone thin films using time-of-flight secondary ion mass spectrometry."
 authors:
   - family-names: "dreece23"
     given-names: ""

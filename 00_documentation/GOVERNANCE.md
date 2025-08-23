@@ -53,6 +53,12 @@
 
 ## Version Control & Dependencies
 
+Root write policy: only README.md and Makefile at root; all outputs live in phase folders or results/.
+
+Submodules: ATOFSIMSCLASS is the only submodule; see 00_documentation/SUBMODULES.md.
+
+The env/requirements-lock.txt must be updated after dependency changes.
+
 **Shared utilities versioning**: Changes to modules in `_shared/utils/`, `adapters/`, `phase*_*.py` scripts, or configuration files require:
 1. Pull request with review by project maintainer
 2. Semantic version increment in affected module docstrings

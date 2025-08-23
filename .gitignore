@@ -1,6 +1,5 @@
 __pycache__/
 .ipynb_checkpoints/
-env/
 *.pyc
 *.pyo
 # raw instrument & huge intermediates (keep outside repo or upload elsewhere)
@@ -11,3 +10,8 @@ env/
 *.imzML
 *.ibd
 */working_extraction/**pySPM_source/
+
+# Environment dir: ignore everything except the lockfile
+env/**
+!env/
+!env/requirements-lock.txt
