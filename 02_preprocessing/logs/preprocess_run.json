@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-08-23T21:07:27Z",
-  "git_commit": "902d2e85b48c56d15bf37dca72c8d532f5fb4664",
+  "timestamp": "2025-08-23T21:18:28Z",
+  "git_commit": "621f508f4661a3f8666121b9bb33e6de2c522064",
   "inputs": {
     "positive": "/home/dreece23/sims-pca-ws/out/all_positive_data_renamed.tsv",
     "positive_sha256": "f5ac0e2565dd7209c3d5b60683b6c9103e86f4f2e8b67974e533a0efbedb6358",
@@ -10,6 +10,10 @@
   "outputs": {
     "baseline_tic_sqrt": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
     "robust_pqn_sqrt_pareto": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv",
+    "baseline_tic_sqrt_pos": "02_preprocessing/matrices_pos/baseline_tic_sqrt_pos.tsv",
+    "baseline_tic_sqrt_neg": "02_preprocessing/matrices_neg/baseline_tic_sqrt_neg.tsv",
+    "robust_pqn_sqrt_pareto_pos": "02_preprocessing/matrices_pos/robust_pqn_sqrt_pareto_pos.tsv",
+    "robust_pqn_sqrt_pareto_neg": "02_preprocessing/matrices_neg/robust_pqn_sqrt_pareto_neg.tsv",
     "scaling_factors": "02_preprocessing/logs/scaling_factors.csv"
   },
   "samples": [

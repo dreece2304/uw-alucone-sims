@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "issues": [],
+  "metrics": {
+    "samplewise_correlation_median": 0.561296097734844,
+    "samplewise_correlation_mean": 0.6022747830407503,
+    "mean_spectrum_correlation": 0.6688904335103946
+  },
+  "matrix_info": {
+    "baseline_rows": 1853,
+    "robust_rows": 1853,
+    "baseline_samples": 15,
+    "robust_samples": 15
+  },
+  "files": {
+    "baseline": {
+      "path": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
+      "size_bytes": 539410,
+      "sha256": "c9d5e13fc7d4ef15866f820d36eb390e448d9228fa63a8ce3cefd08c6937938d"
+    },
+    "robust": {
+      "path": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv",
+      "size_bytes": 508257,
+      "sha256": "1967597a14bf619d9603445832aa5b9bd627d502c985517eecefa7f57f5820e1"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "phase": "2",
+  "folder": "02_preprocessing",
+  "description": "Phase 2 preprocessing outputs - normalized matrices, QC plots, logs, and validation",
+  "allowed_extensions": [".tsv", ".csv", ".json", ".png", ".py", ".md", ".txt"],
+  "forbidden_patterns": ["*~", "*.tmp", "*.bak", "*.swp", ".DS_Store"],
+  "allowed_dirs": [
+    "scripts",
+    "matrices", 
+    "matrices_pos",
+    "matrices_neg",
+    "qc",
+    "logs",
+    "exports"
+  ],
+  "allowed_files": [
+    "VALIDATION_REPORT.md"
+  ],
+  "size_limits": {
+    "max_file_mb": 100,
+    "max_total_mb": 500
+  },
+  "critical_files": [
+    "matrices/baseline_tic_sqrt.tsv",
+    "matrices/robust_pqn_sqrt_pareto.tsv",
+    "matrices_pos/baseline_tic_sqrt_pos.tsv", 
+    "matrices_pos/robust_pqn_sqrt_pareto_pos.tsv",
+    "matrices_neg/baseline_tic_sqrt_neg.tsv",
+    "matrices_neg/robust_pqn_sqrt_pareto_neg.tsv",
+    "qc/tic_hist.png",
+    "qc/intensity_density.png", 
+    "qc/baseline_vs_robust_scatter.png",
+    "qc/method_agreement_samplewise_hist.png",
+    "logs/scaling_factors.csv",
+    "logs/preprocess_run.json",
+    "logs/validation.json",
+    "exports/HANDOFF.json",
+    "VALIDATION_REPORT.md"
+  ]
+}

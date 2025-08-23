@@ -61,6 +61,10 @@ def main():
     base_neg_df = pd.DataFrame(Xn_base, columns=samples); base_neg_df.insert(0,"Mass (u)", neg.iloc[:,0].values)
     base_merged = pd.concat([base_pos_df, base_neg_df], axis=0, ignore_index=True)
     write_matrix(base_merged, base_merged.iloc[:,1:].values, OUT_DIR / "matrices" / "baseline_tic_sqrt.tsv")
+    
+    # Write per-polarity baseline matrices
+    write_matrix(base_pos_df, base_pos_df.iloc[:,1:].values, OUT_DIR / "matrices_pos" / "baseline_tic_sqrt_pos.tsv")
+    write_matrix(base_neg_df, base_neg_df.iloc[:,1:].values, OUT_DIR / "matrices_neg" / "baseline_tic_sqrt_neg.tsv")
 
     # ---- Robust: PQN → sqrt → Pareto ----
     Xp_rob, tic_pos2, fac_pos = pqn_normalize(pos)
@@ -72,6 +76,10 @@ def main():
     rob_neg_df = pd.DataFrame(Xn_rob, columns=samples); rob_neg_df.insert(0,"Mass (u)", neg.iloc[:,0].values)
     rob_merged = pd.concat([rob_pos_df, rob_neg_df], axis=0, ignore_index=True)
     write_matrix(rob_merged, rob_merged.iloc[:,1:].values, OUT_DIR / "matrices" / "robust_pqn_sqrt_pareto.tsv")
+    
+    # Write per-polarity robust matrices
+    write_matrix(rob_pos_df, rob_pos_df.iloc[:,1:].values, OUT_DIR / "matrices_pos" / "robust_pqn_sqrt_pareto_pos.tsv")
+    write_matrix(rob_neg_df, rob_neg_df.iloc[:,1:].values, OUT_DIR / "matrices_neg" / "robust_pqn_sqrt_pareto_neg.tsv")
 
     # ---- Diagnostics: scaling factors & TIC ----
     diag = pd.DataFrame({
@@ -106,6 +114,10 @@ def main():
         "outputs": {
             "baseline_tic_sqrt": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
             "robust_pqn_sqrt_pareto": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv",
+            "baseline_tic_sqrt_pos": "02_preprocessing/matrices_pos/baseline_tic_sqrt_pos.tsv",
+            "baseline_tic_sqrt_neg": "02_preprocessing/matrices_neg/baseline_tic_sqrt_neg.tsv",
+            "robust_pqn_sqrt_pareto_pos": "02_preprocessing/matrices_pos/robust_pqn_sqrt_pareto_pos.tsv",
+            "robust_pqn_sqrt_pareto_neg": "02_preprocessing/matrices_neg/robust_pqn_sqrt_pareto_neg.tsv",
             "scaling_factors": "02_preprocessing/logs/scaling_factors.csv"
         },
         "samples": samples,

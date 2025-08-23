@@ -1,0 +1,6 @@
+Method Agreement Statistics (Baseline vs Robust)
+==================================================
+Samplewise Pearson r median: 0.5613
+Samplewise Pearson r mean:   0.6023
+Number of samples:           15
+Range: [0.5293, 0.7761]
