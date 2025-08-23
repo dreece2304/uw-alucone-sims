@@ -10,4 +10,4 @@ env/
 *.ita
 *.imzML
 *.ibd
-*/working_extraction/**
+*/working_extraction/**pySPM_source/
