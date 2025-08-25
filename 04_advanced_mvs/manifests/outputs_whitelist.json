@@ -1,0 +1,32 @@
+{
+  "schema": "p4_outputs_whitelist.v1",
+  "description": "Permitted output paths for Phase 4 Advanced MVS analysis executors",
+  "allowed_output_patterns": [
+    "04_advanced_mvs/figures/**",
+    "04_advanced_mvs/reports/**",
+    "04_advanced_mvs/logs/**",
+    "04_advanced_mvs/manifests/**"
+  ],
+  "allowed_script_modifications": [
+    "04_advanced_mvs/scripts/**"
+  ],
+  "forbidden_patterns": [
+    "**/*.new",
+    "**/*.bak", 
+    "**/*.tmp",
+    "**/*.old",
+    "**/*_corrected*",
+    "**/*_fixed*",
+    "**/*_v2*",
+    "**/debug_*",
+    "**/temp_*",
+    "**/test_*"
+  ],
+  "enforcement_notes": [
+    "No new script names without explicit instruction",
+    "All outputs must serve Phase 4 scope (NMF, MCR-ALS, NLDR)",
+    "Existing scripts may be modified but not renamed",
+    "Cross-phase writes only via _shared/state/ and 00_documentation/reports/"
+  ],
+  "timestamp": "2025-08-24T16:35:00.000Z"
+}

@@ -1,0 +1,63 @@
+{
+  "dataset": "combined_robust",
+  "k_star": 2,
+  "n_starts": 3,
+  "successful_starts": 3,
+  "best_start": "perturbed_1",
+  "convergence_info": [
+    {
+      "start_idx": 0,
+      "start_name": "direct_nmf",
+      "converged": true,
+      "final_residual": 0.2579358519930441,
+      "r_squared": 0.9977013241378204,
+      "rmse": 0.003046298920122733
+    },
+    {
+      "start_idx": 1,
+      "start_name": "perturbed_1",
+      "converged": true,
+      "final_residual": 0.25793432785801207,
+      "r_squared": 0.9977013377206255,
+      "rmse": 0.003046289919866031
+    },
+    {
+      "start_idx": 2,
+      "start_name": "perturbed_2",
+      "converged": true,
+      "final_residual": 0.25793467791405017,
+      "r_squared": 0.9977013346009919,
+      "rmse": 0.0030462919870042583
+    }
+  ],
+  "best_metrics": {
+    "r_squared": 0.9977013377206255,
+    "rmse": 0.003046289919866031,
+    "final_residual": 0.25793432785801207
+  },
+  "component_stabilities": [
+    0.9999999999791014,
+    0.9999999927838085
+  ],
+  "stable_fraction": 1.0,
+  "dose_correlations": [
+    {
+      "component": 0,
+      "rho_all": -0.9819805060619657,
+      "p_all": 8.648244862274882e-11,
+      "rho5": -0.9999999999999999,
+      "p5": 1.4042654220543672e-24
+    },
+    {
+      "component": 1,
+      "rho_all": 0.02182178902359924,
+      "p_all": 0.9384710668913703,
+      "rho5": 0.0,
+      "p5": 1.0
+    }
+  ],
+  "passed_recon": true,
+  "passed_dose": true,
+  "passed_stability": true,
+  "timestamp": "2025-08-24T22:08:33.354949Z"
+}

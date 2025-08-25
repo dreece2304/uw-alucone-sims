@@ -1,0 +1,95 @@
+{
+  "dataset": "combined_robust_pareto",
+  "k_star": 6,
+  "n_starts": 3,
+  "successful_starts": 3,
+  "best_start": "direct_nmf",
+  "convergence_info": [
+    {
+      "start_idx": 0,
+      "start_name": "direct_nmf",
+      "converged": false,
+      "final_residual": 2.944267431646249,
+      "r_squared": 0.9918346211723279,
+      "rmse": 0.010292130596183448
+    },
+    {
+      "start_idx": 1,
+      "start_name": "perturbed_1",
+      "converged": false,
+      "final_residual": 2.944546494260475,
+      "r_squared": 0.9918338472440029,
+      "rmse": 0.010292618337342031
+    },
+    {
+      "start_idx": 2,
+      "start_name": "perturbed_2",
+      "converged": false,
+      "final_residual": 2.9443205697945585,
+      "r_squared": 0.991834473803544,
+      "rmse": 0.010292223471967853
+    }
+  ],
+  "best_metrics": {
+    "r_squared": 0.9918346211723279,
+    "rmse": 0.010292130596183448,
+    "final_residual": 2.944267431646249
+  },
+  "component_stabilities": [
+    0.9999999761070544,
+    0.9999999937181053,
+    0.9999998430330362,
+    0.9999999524670693,
+    0.9999999348419463,
+    0.9999999128048116
+  ],
+  "stable_fraction": 1.0,
+  "dose_correlations": [
+    {
+      "component": 0,
+      "rho_all": 0.0,
+      "p_all": 1.0,
+      "rho5": 0.0,
+      "p5": 1.0
+    },
+    {
+      "component": 1,
+      "rho_all": -0.6437427761961776,
+      "p_all": 0.009607530819069423,
+      "rho5": -0.8999999999999998,
+      "p5": 0.03738607346849874
+    },
+    {
+      "component": 2,
+      "rho_all": 0.0982858450364341,
+      "p_all": 0.7274789866457201,
+      "rho5": -0.49999999999999994,
+      "p5": 0.39100221895577053
+    },
+    {
+      "component": 3,
+      "rho_all": 0.644318317461068,
+      "p_all": 0.009522236609246759,
+      "rho5": 0.0,
+      "p5": 1.0
+    },
+    {
+      "component": 4,
+      "rho_all": 0.46958792628518525,
+      "p_all": 0.07738213413737019,
+      "rho5": 0.0,
+      "p5": 1.0
+    },
+    {
+      "component": 5,
+      "rho_all": 0.9743529321368292,
+      "p_all": 8.421358013779966e-10,
+      "rho5": 0.9999999999999999,
+      "p5": 1.4042654220543672e-24
+    }
+  ],
+  "passed_recon": true,
+  "passed_dose": true,
+  "passed_stability": true,
+  "timestamp": "2025-08-24T22:15:27.960439Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "p4_inputs.v1",
+  "matrices": {
+    "combined": {
+      "baseline_tic_sqrt": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
+      "robust_pqn_sqrt_pareto": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv",
+      "robust_pqn_sqrt": "02_preprocessing/matrices/robust_pqn_sqrt.tsv"
+    }
+  },
+  "matrices_pos": {
+    "baseline_tic_sqrt_pos": "02_preprocessing/matrices_pos/baseline_tic_sqrt_pos.tsv",
+    "robust_pqn_sqrt_pos": "02_preprocessing/matrices_pos/robust_pqn_sqrt_pos.tsv",
+    "robust_pqn_sqrt_pareto_pos": "02_preprocessing/matrices_pos/robust_pqn_sqrt_pareto_pos.tsv"
+  },
+  "matrices_neg": {
+    "baseline_tic_sqrt_neg": "02_preprocessing/matrices_neg/baseline_tic_sqrt_neg.tsv",
+    "robust_pqn_sqrt_neg": "02_preprocessing/matrices_neg/robust_pqn_sqrt_neg.tsv",
+    "robust_pqn_sqrt_pareto_neg": "02_preprocessing/matrices_neg/robust_pqn_sqrt_pareto_neg.tsv"
+  },
+  "primary_input": "02_preprocessing/matrices/robust_pqn_sqrt.tsv",
+  "metadata": {
+    "source": "HANDOFF.json",
+    "phase2_decision": "robust_pqn_sqrt primary",
+    "timestamp": "2025-08-24T16:35:00.000Z",
+    "git_commit": "a1d66523f0335898961ecab5814950e50122b5ce"
+  }
+}

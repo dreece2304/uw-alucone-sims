@@ -1,0 +1,67 @@
+{
+  "schema": "p4_inputs_check.v1",
+  "timestamp": "2025-08-24T16:35:00.000Z",
+  "primary_input": {
+    "path": "02_preprocessing/matrices/robust_pqn_sqrt.tsv",
+    "exists": true,
+    "non_empty": true,
+    "line_count": 1854,
+    "column_count": 16,
+    "first_column_header": "Mass (u)",
+    "expected_samples": 15,
+    "actual_samples": 15,
+    "header_check": "PASS"
+  },
+  "matrices_combined": {
+    "robust_pqn_sqrt": {
+      "path": "02_preprocessing/matrices/robust_pqn_sqrt.tsv",
+      "status": "EXISTS"
+    },
+    "robust_pqn_sqrt_pareto": {
+      "path": "02_preprocessing/matrices/robust_pqn_sqrt_pareto.tsv", 
+      "status": "EXISTS"
+    },
+    "baseline_tic_sqrt": {
+      "path": "02_preprocessing/matrices/baseline_tic_sqrt.tsv",
+      "status": "EXISTS"
+    }
+  },
+  "matrices_pos": {
+    "robust_pqn_sqrt_pos": {
+      "path": "02_preprocessing/matrices_pos/robust_pqn_sqrt_pos.tsv",
+      "status": "EXISTS"
+    },
+    "robust_pqn_sqrt_pareto_pos": {
+      "path": "02_preprocessing/matrices_pos/robust_pqn_sqrt_pareto_pos.tsv",
+      "status": "EXISTS"
+    },
+    "baseline_tic_sqrt_pos": {
+      "path": "02_preprocessing/matrices_pos/baseline_tic_sqrt_pos.tsv",
+      "status": "EXISTS"
+    }
+  },
+  "matrices_neg": {
+    "robust_pqn_sqrt_neg": {
+      "path": "02_preprocessing/matrices_neg/robust_pqn_sqrt_neg.tsv",
+      "status": "EXISTS"
+    },
+    "robust_pqn_sqrt_pareto_neg": {
+      "path": "02_preprocessing/matrices_neg/robust_pqn_sqrt_pareto_neg.tsv",
+      "status": "EXISTS"
+    },
+    "baseline_tic_sqrt_neg": {
+      "path": "02_preprocessing/matrices_neg/baseline_tic_sqrt_neg.tsv",
+      "status": "EXISTS"
+    }
+  },
+  "validation_summary": {
+    "required_primary_inputs": "PASS",
+    "pareto_variants": "PASS",
+    "per_polarity_matrices": "PASS",
+    "header_format": "PASS",
+    "sample_count": "PASS"
+  },
+  "ok": true,
+  "missing_files": [],
+  "issues": []
+}

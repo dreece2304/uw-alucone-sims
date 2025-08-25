@@ -1,0 +1,26 @@
+{
+  "dataset": "pos_robust",
+  "n_samples": 15,
+  "n_features": 930,
+  "tsne": {
+    "metrics": {
+      "trustworthiness": 0.9447619047619048,
+      "perplexity": 4,
+      "metric": "cosine",
+      "kl_divergence": 0.043281733989715576
+    },
+    "dose_trend": "clear",
+    "dose_metrics": {
+      "consecutive_dist_mean": 58.231163024902344,
+      "within_dose_spread_mean": 5.218094825744629,
+      "separation_ratio": 11.159465789794922
+    },
+    "pattern_overlap": "high",
+    "pattern_metrics": {
+      "inter_pattern_dist_mean": 3.731264352798462,
+      "intra_pattern_spread_mean": 52.674224853515625,
+      "overlap_ratio": 14.116987228393555
+    }
+  },
+  "timestamp": "2025-08-24T22:20:34.263762Z"
+}

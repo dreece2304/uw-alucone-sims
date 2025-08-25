@@ -1,0 +1,40 @@
+{
+  "dataset": "combined_baseline",
+  "k_star": 5,
+  "selection_metrics": {
+    "2": {
+      "median_r_squared": 0.8959840862158417,
+      "median_rmse": 0.002808656628926141,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.6
+    },
+    "3": {
+      "median_r_squared": 0.968592036642452,
+      "median_rmse": 0.0015433649793192596,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    },
+    "4": {
+      "median_r_squared": 0.9879674710809734,
+      "median_rmse": 0.0009552723571213505,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    },
+    "5": {
+      "median_r_squared": 0.9947219637471756,
+      "median_rmse": 0.0006326812122101009,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    },
+    "6": {
+      "median_r_squared": 0.9960455517024203,
+      "median_rmse": 0.0005476356403874282,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    }
+  },
+  "passed_recon": true,
+  "passed_dose": true,
+  "passed_stability": true,
+  "timestamp": "2025-08-24T17:08:39.570599Z"
+}

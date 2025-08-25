@@ -1,0 +1,40 @@
+{
+  "dataset": "combined_robust_pareto",
+  "k_star": 6,
+  "selection_metrics": {
+    "2": {
+      "median_r_squared": 0.9471563033321676,
+      "median_rmse": 0.026182656892818283,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.8999999999999998
+    },
+    "3": {
+      "median_r_squared": 0.966909454849853,
+      "median_rmse": 0.020719013821712415,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    },
+    "4": {
+      "median_r_squared": 0.9759344448779447,
+      "median_rmse": 0.017669125731510336,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    },
+    "5": {
+      "median_r_squared": 0.9847334631466899,
+      "median_rmse": 0.014073022575386052,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    },
+    "6": {
+      "median_r_squared": 0.9898771845748621,
+      "median_rmse": 0.011459555656593661,
+      "stable_fraction": 1.0,
+      "best_abs_rho5": 0.9999999999999999
+    }
+  },
+  "passed_recon": true,
+  "passed_dose": true,
+  "passed_stability": true,
+  "timestamp": "2025-08-24T17:08:48.129039Z"
+}
